@@ -1,0 +1,52 @@
+!!VERY IMPORTANT
+in axios or fetch
+use  response  and  data   as responses
+also  request
+
+FIX MAP DISJOINTED OR FRAGMENTED, ADD
+import 'leaflet/dist/leaflet.css'
+
+REGEX FOR DOMAIN AND IP
+/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test( ipaddress )
+
+/^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$/.test( domain )
+
+
+PREFIX ENV VARIABLE  IN FILE  .env
+REACT_APP_
+
+axios.get
+is a async method so we must put  await 
+
+TO USE LEAFLET ON REACT
+npm i leaflet react-leaflet
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+
+RESET input CSS PROPERTIES
+input {
+  outline: none;
+  border: none;
+  /* background-image: none; */
+  /* background-color: transparent; */
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+ERROR REACT WITH LEAFLET
+https://github.com/PaulLeCam/react-leaflet/issues/877
+delete folder node_modules/cache
+add  browser thing   to package.json  
+"browserslist": [
+   ">0.2%",
+  "not dead",
+  "not op_mini all"
+],
+
+
+
+
+WEBS CONSULTED:
+https://react-leaflet.js.org/docs/start-setup/
+https://www.smashingmagazine.com/2020/02/javascript-maps-react-leaflet/
+https://stackoverflow.com/questions/26093545/how-to-validate-domain-name-using-regex/38578855
